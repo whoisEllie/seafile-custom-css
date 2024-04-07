@@ -1,11 +1,25 @@
+:root {
+  --24: rgb(24, 24, 24);
+  --32: rgb(32, 32, 32);
+  --48: rgb(48, 48, 48);
+  --64: rgb(64, 64, 64);
+  --104: rgb(104, 104, 104);
+  --128: rgb(128, 128, 128);
+  --192: rgb(192, 192, 192);
+  --208: rgb(208, 208, 208);
+  --pink: #AA717C;
+  --pink-bright: #BC838E;
+  --pink-brighter: #D59CA7;
+}
+
 ::selection {
-  color: rgb(64, 64, 64) !important;
+  color: var(--64) !important;
   background: #ffc1c6 !important;
 }
 
 body {
-  color: rgb(192, 192, 192);
-  background-color: rgb(24, 24, 24);
+  color: var(--192);
+  background-color: var(--24);
 }
 
 /* Make working with the custom CSS field easier */
@@ -17,14 +31,14 @@ textarea {
 }
 
 .loading-icon {
-  border: 2px solid rgb(192, 192, 192);
-  border-left-color: rgb(128, 128, 128);
+  border: 2px solid var(--192);
+  border-left-color: var(--128);
 }
 
 /* Header styling for simpler pages */
 #header, .top-header {
-  background: rgb(48, 48, 48);
-  border-bottom: 1px solid rgb(64, 64, 64);
+  background: var(--48);
+  border-bottom: 1px solid var(--64);
 }
 
 /* Hide ad link for pro version on Info page */
@@ -34,21 +48,21 @@ textarea {
 
 /* System Admin settings side nav menu */
 .sf-heading {
- color: rgb(192, 192, 192);
+ color: var(--192);
 }
 .nav-pills .nav-item .nav-link.active {
-  background-color: #AA717C !important;
+  background-color: var(--pink) !important;
   border-radius: 6px;
 }
 .nav-pills .nav-item .nav-link:hover {
-  background-color: rgb(64, 64, 64);
+  background-color: var(--64);
   border-radius: 6px;
 }
 .active > .nav-text {
-  color: rgb(255, 255, 255) !important;
+  color: white !important;
 }
 .nav-text, .side-nav-con [class^="sf2-icon-"] {
-  color: rgb(192, 192, 192);
+  color: var(--192);
 }
 .side-nav-con .nav .nav-item, .side-nav-con .nav .nav-item .nav-link {
 	padding-left: 0;
@@ -62,40 +76,40 @@ textarea {
 
 /* User Settings page */
 .user-setting-nav .nav-item.active .nav-link {
-  border-color: #AA717C;
-  color: #AA717C;
-  /* background-color: rgb(48, 48, 48); */
+  border-color: var(--pink);
+  color: var(--pink);
+  /* background-color: var(--48); */
   border-bottom: none;
 }
 .user-setting-nav .nav-item .nav-link {
-  color: rgb(128, 128, 128);
+  color: var(--128);
 }
 /* Uncomment to style user settings sidebar like admin settings */
 /* .user-setting-nav .nav-item.active .nav-link {
   color: white !important;
   font-weight: bold;
-  background-color: #AA717C !important;
+  background-color: var(--pink) !important;
   border: none;
   border-radius: 6px;
 }
 .user-setting-nav .nav-item .nav-link {
-  color: rgb(192, 192, 192);
+  color: var(--192);
   padding: 0.4rem 0 0.4rem 0.9rem;
   margin: 0.25em 0;
 }
 .user-setting-nav .nav-item .nav-link:hover {
-  background-color: rgb(64, 64, 64);
+  background-color: var(--64);
   border-radius: 6px;
 } */
 
 /* Password change page */
 .new-narrow-panel {
-  /* border: 1px solid rgb(64, 64, 64); */
+  /* border: 1px solid var(--64); */
   border: none;
   border-radius: 12px;
   box-shadow: none;
   overflow: hidden;
-  /* background: rgb(32, 32, 32); */
+  /* background: var(--32); */
   background: none;
   margin: 20vh auto 0 auto;
 }
@@ -103,7 +117,7 @@ textarea {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 .new-narrow-panel .hd {
-	color: rgb(192, 192, 192);
+	color: var(--192);
 	font-size: 1.5rem;
 	padding: 50px 20px 4px;
   margin-bottom: 1rem;
@@ -111,7 +125,7 @@ textarea {
 	border-bottom: none;
   text-align: center;
   font-weight: normal;
-  border-bottom: 1px solid rgb(48, 48, 48);
+  border-bottom: 1px solid var(--48);
 }
 .new-narrow-panel .con {
   padding-top: 0;
@@ -120,24 +134,24 @@ textarea {
   /* display: none; */
   padding-bottom: 0;
   margin-bottom: 0;
-  color: rgb(128, 128, 128);
+  color: var(--128);
 }
 .new-narrow-panel .con input {
   margin-top: 2px;
   height: 36px;
-  background-color: rgb(32, 32, 32) !important;
-  border: 1px solid rgb(64, 64, 64) !important;
+  background-color: var(--32) !important;
+  border: 1px solid var(--64) !important;
 }
 .new-narrow-panel .con input:hover, .new-narrow-panel .con input:focus {
-  background-color: rgb(48, 48, 48) !important;
-  border: 1px solid rgb(64, 64, 64) !important;
+  background-color: var(--48) !important;
+  border: 1px solid var(--64) !important;
 }
 .new-narrow-panel .con #id_old_password::placeholder {
   content: "test"; /* fuck */
 }
 input.submit {
   border-radius: 6px;
-  color: rgb(192, 192, 192);
+  color: var(--192);
 }
 
 /* Fix broken collapsibles in sidebar on file view */
@@ -165,43 +179,43 @@ img.avatar, img.user-avatar {
 
 /* Search and notification buttons on header of file view */
 #notification-popover, .top-search-file-icon {
-  color: rgb(128, 128, 128) !important;
+  color: var(--128) !important;
   transition: color 0.2s;
 }
 #notification-popover:hover, .top-search-file-icon:hover {
-  color: rgb(208, 208, 208) !important;
+  color: var(--208) !important;
 }
 
 .main-panel-north, .side-panel-north, .file-view-header {
-  background: rgb(48, 48, 48) !important;
-  border-bottom: 1px solid rgb(64, 64, 64) !important;
+  background: var(--48) !important;
+  border-bottom: 1px solid var(--64) !important;
 }
 .side-panel-center {
-  border-right: 1px solid rgb(48, 48, 48) !important;
+  border-right: 1px solid var(--48) !important;
 }
 .side-panel-footer {
-  border-right: 1px solid rgb(48, 48, 48);
+  border-right: 1px solid var(--48);
 }
 .side-nav-footer {
   background: rgb(20, 20, 20) !important;
-  border-top: 1px solid rgb(48, 48, 48);
+  border-top: 1px solid var(--48);
 }
 
 .cur-view-path, h2.heading {
-  background-color: rgb(24, 24, 24) !important;
-  color: rgb(192, 192, 192);
+  background-color: var(--24) !important;
+  color: var(--192);
 }
 h2.heading {
-  border-bottom: 1px solid rgb(48, 48, 48) !important;
+  border-bottom: 1px solid var(--48) !important;
   padding: 8px 0;
   margin: 0 16px;
 }
 .cur-view-path::after {
-  border-bottom: 1px solid rgb(48, 48, 48) !important;
+  border-bottom: 1px solid var(--48) !important;
 }
 
 h4.border-bottom, .info-item-heading {
-  border-bottom: 1px solid rgb(48, 48, 48) !important;
+  border-bottom: 1px solid var(--48) !important;
 }
 
 textarea,
@@ -213,9 +227,9 @@ textarea,
 .true__control,
 .true__menu,
 .permission-editor__control {
-  background-color: rgb(32, 32, 32) !important;
-  color: rgb(192, 192, 192) !important;
-  border: 1px solid rgb(48, 48, 48) !important;
+  background-color: var(--32) !important;
+  color: var(--192) !important;
+  border: 1px solid var(--48) !important;
   border-radius: 6px !important;
   transition: color 0.2s, background-color 0.2s, border 0.2s !important;
 }
@@ -229,12 +243,12 @@ textarea:hover,
 .true__control:hover,
 .true__menu:hover,
 .permission-editor__control:hover {
-  background-color: rgb(48, 48, 48) !important;
-  color: rgb(208, 208, 208) !important;
-  border: 1px solid rgb(64, 64, 64) !important;
+  background-color: var(--48) !important;
+  color: var(--208) !important;
+  border: 1px solid var(--64) !important;
 }
 .css-1dimb5e-singleValue {
-  color: rgb(208, 208, 208) !important;
+  color: var(--208) !important;
 }
 textarea:focus,
 .form-control:focus,
@@ -242,13 +256,13 @@ textarea:focus,
 .css-1yl8597-control:focus,
 .css-18i9lch-control:focus,
 #id_captcha_1:focus {
-  background-color: rgb(48, 48, 48) !important;
-  color: rgb(208, 208, 208) !important;
-  border: 1px solid rgb(64, 64, 64) !important;
+  background-color: var(--48) !important;
+  color: var(--208) !important;
+  border: 1px solid var(--64) !important;
 }
 .sf-view-mode-btn.current-mode {
-  background-color: rgb(32, 32, 32) !important;
-  color: rgb(192, 192, 192) !important;
+  background-color: var(--32) !important;
+  color: var(--192) !important;
 }
 img.captcha {
   border-radius: 6px;
@@ -256,39 +270,39 @@ img.captcha {
 
 .btn-primary {
   color: white;
-  background-color: #AA717C;
-  border: 1px solid #AA717C !important;
+  background-color: var(--pink);
+  border: 1px solid var(--pink) !important;
   border-radius: 6px;
 }
 .btn-primary:hover {
-  background-color: #BC838E;
-  border: 1px solid #D59CA7  !important;
+  background-color: var(--pink-bright);
+  border: 1px solid var(--pink-brighter)  !important;
 }
 
 .btn-outline-primary {
-  color: #AA717C;
-  border-color: #AA717C;
-  border: 1px solid #AA717C;
+  color: var(--pink);
+  border-color: var(--pink);
+  border: 1px solid var(--pink);
   border-radius: 6px;
 }
 .btn-outline-primary:hover {
   color: white;
-  border-color: #AA717C;
-  background-color: #AA717C;
+  border-color: var(--pink);
+  background-color: var(--pink);
 }
 
 tr > td {
-  color: rgb(104, 104, 104);
-  border-bottom: 1px solid rgb(48, 48, 48);
+  color: var(--104);
+  border-bottom: 1px solid var(--48);
 }
 tr > th {
-  border-bottom: 1px solid rgb(48, 48, 48);
+  border-bottom: 1px solid var(--48);
 }
 .tr-highlight {
-  background-color: rgb(48, 48, 48) !important;
+  background-color: var(--48) !important;
 }
 .tr-active {
-  background-color: rgb(64, 64, 64) !important;
+  background-color: var(--64) !important;
 }
 .tr-drag-effect {
   background-image: none;
@@ -296,7 +310,7 @@ tr > th {
 }
 
 a.op-link {
-  color: rgb(128, 128, 128) !important;
+  color: var(--128) !important;
   transition: color 0.2s;
 }
 a.op-link:hover {
@@ -308,16 +322,16 @@ a.op-link:hover {
   color: #FFA3B5
 }
 .modal-header {
-  border-bottom: 1px solid rgb(64, 64, 64);
+  border-bottom: 1px solid var(--64);
 }
 .share-dialog-content .share-dialog-side {
-  border-right: 1px solid rgb(64, 64, 64);
+  border-right: 1px solid var(--64);
 }
 .border-bottom {
-  border-bottom: 1px solid rgb(64, 64, 64) !important;
+  border-bottom: 1px solid var(--64) !important;
 }
 .share-dialog-side .nav-pills .nav-item .nav-link {
-  color: rgb(192, 192, 192);
+  color: var(--192);
   margin-top: 4px;
 }
 .share-dialog-side .nav-pills .nav-item .active {
@@ -327,47 +341,47 @@ a.op-link:hover {
   transition: background-color 0.2s;
 }
 .share-link .cursor-pointer:hover {
-  background-color: rgb(64, 64, 64);
+  background-color: var(--64);
 }
 .share-link .cursor-pointer td {
-  color: rgb(128, 128, 128);
-  border-top: 1px solid rgb(64, 64, 64) !important;
+  color: var(--128);
+  border-top: 1px solid var(--64) !important;
 }
 .true__input-container .true__input {
-  color: rgb(208, 208, 208) !important;
+  color: var(--208) !important;
 }
 .true__multi-value {
-  background-color: rgb(64, 64, 64) !important;
+  background-color: var(--64) !important;
   border-radius: 6px !important;
 }
 .true__multi-value .select-module-name {
-  color: rgb(192, 192, 192) !important;
+  color: var(--192) !important;
 }
 .user-select .true__menu:hover {
-  background-color: rgb(32, 32, 32) !important;
+  background-color: var(--32) !important;
 }
 .true__option, .permission-editor__option  {
-  background-color: rgb(32, 32, 32) !important;
+  background-color: var(--32) !important;
   border-radius: 6px !important;
   margin-left: 4px;
   width: calc(100% - 8px) !important;
   transition: background-color 0.2s;
 }
 .true__option:hover, .permission-editor__option:hover {
-  background-color: rgb(48, 48, 48) !important;
+  background-color: var(--48) !important;
 }
 .permission-editor__menu-list {
-  background-color: rgb(32, 32, 32) !important;
+  background-color: var(--32) !important;
   border-radius: 6px !important;
-  border: 1px solid rgb(64, 64, 64);
+  border: 1px solid var(--64);
 }
 .css-1nmdiq5-menu {
-	background-color: rgb(32, 32, 32) !important;
+	background-color: var(--32) !important;
 }
 .input-group-text {
   background: none;
   border: none;
-  color: rgb(128, 128, 128);
+  color: var(--128);
 }
 
 /* Styling small buttons */
@@ -382,7 +396,7 @@ a.op-link:hover {
 .sf2-icon-delete,
 .sf2-icon-copy,
 .sf2-icon-x3 {
-  color: rgb(128, 128, 128) !important;
+  color: var(--128) !important;
   transition: color 0.2s;
 }
 .fa-link:hover,
@@ -399,12 +413,12 @@ a.op-link:hover {
   color: #FFA3B5 !important;
 }
 .close {
-  color: rgb(128, 128, 128);
+  color: var(--128);
   text-shadow: none;
   transition: color 0.2s;
 }
 .close:hover {
-  color: rgb(208, 208, 208);
+  color: var(--208);
 }
 
 /* Better trash icon */
@@ -426,7 +440,7 @@ a, a:hover {
   transition: color 0.2s;
 }
 .nav .nav-item .nav-link:hover {
-  color: rgb(192, 192, 192);
+  color: var(--192);
 }
 
 /* Statistics page */
@@ -434,16 +448,16 @@ a, a:hover {
   filter: invert(100%) grayscale(60%) brightness(1.25);
 }
 .sys-stat-tool {
-  color: rgb(192, 192, 192) !important;
+  color: var(--192) !important;
 }
 .system-statistic-item {
-  border: 1px solid rgb(48, 48, 48) !important;
-  background-color: rgb(32, 32, 32) !important;
+  border: 1px solid var(--48) !important;
+  background-color: var(--32) !important;
   transition: background-color 0.2s, border 0.2s;
 }
 .sys-stat-tool .item-active, .system-statistic-item:hover {
-  border: 1px solid rgb(64, 64, 64) !important;
-  background-color: rgb(48, 48, 48) !important;
+  border: 1px solid var(--64) !important;
+  background-color: var(--48) !important;
 }
 .rounded-left {
   border-top-left-radius: 6px !important;
@@ -455,7 +469,7 @@ a, a:hover {
 }
 .statistic-traffic-tab .statistic-traffic-tab-item:hover {
   border: none !important;
-  color: rgb(192, 192, 192) !important;
+  color: var(--192) !important;
 }
 .statistic-traffic-tab .statistic-traffic-tab-item.active {
   border-bottom: 2px solid #FFA3B5 !important;
@@ -463,16 +477,16 @@ a, a:hover {
 }
 .statistic-reports-title {
   background: none !important;
-  color: rgb(192, 192, 192) !important;
-  border-bottom: 1px solid rgb(48, 48, 48);
+  color: var(--192) !important;
+  border-bottom: 1px solid var(--48);
   padding-left: 0 !important;
   padding-bottom: 2px !important;
 }
 
 .empty-tip {
-  border: 1px solid rgb(48, 48, 48);
+  border: 1px solid var(--48);
   border-radius: 12px;
-  background-color: rgb(32, 32, 32);
+  background-color: var(--32);
 }
 .empty-tip > img {
   filter: invert(85%);
@@ -481,10 +495,10 @@ a, a:hover {
   filter: invert(75%);
 }
 .empty-tip > h2 {
-  color: rgb(128, 128, 128);
+  color: var(--128);
 }
 .empty-tip > p {
-  color: rgb(128, 128, 128);
+  color: var(--128);
 }
 
 /* Non-admin settings page */
@@ -492,24 +506,24 @@ a, a:hover {
   display: none;
 }
 .setting-item-heading {
-  border-bottom: 1px solid rgb(48, 48, 48);
+  border-bottom: 1px solid var(--48);
 }
 .language-selector > :not([class*="-control"]) {
   border-radius: 12px;
-  border: 1px solid rgb(64, 64, 64);
+  border: 1px solid var(--64);
 }
 .language-selector > :not([class*="-control"]) * {
-  background-color: rgb(48, 48, 48);
+  background-color: var(--48);
 }
 .language-selector > :not([class*="-control"]) *:hover {
-  background-color: rgb(64, 64, 64);
+  background-color: var(--64);
 }
 .language-selector svg {
-  color: rgb(128, 128, 128) !important;
+  color: var(--128) !important;
 }
 
 .flex-auto > .side-panel {
-  border-right: 1px solid rgb(48, 48, 48);
+  border-right: 1px solid var(--48);
 }
 
 /* Invert and filter non-thumbnail file icons */
@@ -531,8 +545,8 @@ input.form-check-input {
 }
 
 .uploader-list-view {
-  background-color: rgb(32, 32, 32);
-  border: 1px solid rgb(64, 64, 64);
+  background-color: var(--32);
+  border: 1px solid var(--64);
   border-radius: 12px;
   overflow: hidden;
   bottom: 24px;
@@ -540,20 +554,20 @@ input.form-check-input {
   box-shadow: none;
 }
 .uploader-list-header {
-  background-color: rgb(48, 48, 48);
-  color: rgb(192, 192, 192);
+  background-color: var(--48);
+  color: var(--192);
 }
 .uploader-list-content {
-  background-color: rgb(32, 32, 32);
+  background-color: var(--32);
 }
 .upload-name > div {
-  color: rgb(192, 192, 192);
+  color: var(--192);
 }
 .upload-progress .progress {
   height: 0.75em;
 }
 .progress {
-  background-color: rgb(24, 24, 24);
+  background-color: var(--24);
   border-radius: 0.375em;
 }
 .progress-bar {
@@ -562,24 +576,24 @@ input.form-check-input {
 
 .dropdown-menu {
   border-radius: 12px;
-  background-color: rgb(48, 48, 48);
-  border: 1px solid rgb(64, 64, 64);
+  background-color: var(--48);
+  border: 1px solid var(--64);
 }
 .dropdown-item {
-  color: rgb(192, 192, 192);
+  color: var(--192);
   padding: .25rem 1rem;
 }
 .dropdown-item:hover {
-  background-color: rgb(64, 64, 64);
-  color: rgb(192, 192, 192);
+  background-color: var(--64);
+  color: var(--192);
 }
 .dropdown-divider {
-  border-top: 1px solid rgb(64, 64, 64);
+  border-top: 1px solid var(--64);
 }
 
 .modal-content {
-  background-color: rgb(48, 48, 48);
-  border: 1px solid rgb(64, 64, 64);
+  background-color: var(--48);
+  border: 1px solid var(--64);
   border-radius: 12px;
 }
 
@@ -589,7 +603,7 @@ input.form-check-input {
 
 /* Style user info popup */
 #user-info-popup {
-  background-color: rgb(48, 48, 48);
+  background-color: var(--48);
 }
 .account-popup {
   right: -7px;
@@ -601,67 +615,67 @@ input.form-check-input {
   line-height: 30px !important;
 }
 #quota-bar {
-  border: 1px solid rgb(128, 128, 128);
+  border: 1px solid var(--128);
 }
 #quota-usage {
-  background: rgb(128, 128, 128);
+  background: var(--128);
 }
 .sf-popover {
-  background: rgb(48, 48, 48);
-  border: 1px solid rgb(64, 64, 64);
+  background: var(--48);
+  border: 1px solid var(--64);
   border-radius: 12px;
   box-shadow: none;
   overflow: hidden;
 }
 .account-popup a.item {
-  color: rgb(192, 192, 192);
+  color: var(--192);
   border: none;
 }
 .account-popup a.item:hover {
-  background-color: rgb(64, 64, 64);
+  background-color: var(--64);
 }
 .account-popup .item {
-  border-bottom: 1px solid rgb(64, 64, 64);
+  border-bottom: 1px solid var(--64);
 }
 .outer-caret {
-  border-color: rgb(64, 64, 64) transparent;
-  color: rgb(64, 64, 64);
+  border-color: var(--64) transparent;
+  color: var(--64);
   display: none;
 }
 .inner-caret {
-  border-color: rgb(48, 48, 48) !important;
-  color: rgb(48, 48, 48);
+  border-color: var(--48) !important;
+  color: var(--48);
   display: none;
 }
 
 /* Style notifications popup */
 .notification-container {
-  background: rgb(48, 48, 48);
-  border: 1px solid rgb(64, 64, 64);
+  background: var(--48);
+  border: 1px solid var(--64);
   border-radius: 12px;
   box-shadow: none;
   overflow: hidden;
 }
 .notification-container .notification-header {
-  border-bottom: 1px solid rgb(64, 64, 64);
+  border-bottom: 1px solid var(--64);
 }
 .notification-container .notification-body .mark-notifications {
   border-bottom: none;
-	color: rgb(128, 128, 128);
+	color: var(--128);
 }
 .notification-body .notification-footer {
-  color: rgb(128, 128, 128);
-	background: rgb(32, 32, 32);
+  color: var(--128);
+	background: var(--32);
 	border-radius: 0;
-	border-top: 1px solid rgb(64, 64, 64);
+	border-top: 1px solid var(--64);
 }
 .notification-container .notification-header .notification-close-icon {
   opacity: 1.0 !important;
-  color: rgb(128, 128, 128);
+  color: var(--128);
   transition: color 0.2s;
 }
 .notification-container .notification-header .notification-close-icon:hover {
-  color: rgb(192, 192, 192);
+  color: var(--192);
 }
 #notice-popover li {
   border-bottom: none;
@@ -670,7 +684,7 @@ input.form-check-input {
   border-left: 3px solid #FFA3B5;
 }
 #notice-popover li:hover {
-  background: rgb(64, 64, 64);
+  background: var(--64);
 }
 #notifications .num {
   background: #E7768C;
@@ -684,39 +698,39 @@ input.form-check-input {
 }
 
 .file-view-content {
-  background: rgb(24, 24, 24);
+  background: var(--24);
 }
 .file-view-tip {
-  background: rgb(32, 32, 32);
+  background: var(--32);
   box-shadow: none;
-  border: 1px solid rgb(48, 48, 48);
+  border: 1px solid var(--48);
   border-radius: 12px;
 }
 .cur-view-detail {
   box-shadow: none;
 }
 .detail-container {
-  border-left: 1px solid rgb(64, 64, 64);
-  background-color: rgb(32, 32, 32);
+  border-left: 1px solid var(--64);
+  background-color: var(--32);
   box-shadow: none;
 }
 .detail-header {
-  background-color: rgb(48, 48, 48);
-  border-bottom: 1px solid rgb(64, 64, 64);
+  background-color: var(--48);
+  border-bottom: 1px solid var(--64);
 }
 .detail-title > .name {
-  color: rgb(192, 192, 192) !important;
+  color: var(--192) !important;
 }
 .dirent-table-container td {
-  color: rgb(104, 104, 104);
+  color: var(--104);
 }
 .detail-header .detail-control {
-  color: rgb(128, 128, 128);
+  color: var(--128);
   transition: color 0.2s;
   cursor: pointer;
 }
 .detail-header .detail-control:hover {
-  color: rgb(208, 208, 208);
+  color: var(--208);
 }
 
 /* Styling image viewer */
@@ -728,22 +742,22 @@ input.form-check-input {
 
 /* Styling text file viewer/editor */
 .text-file-view .cm-editor {
-  border: 1px solid rgb(64, 64, 64);
+  border: 1px solid var(--64);
   border-radius: 12px;
   box-shadow: none;
   overflow: hidden;
   max-width: 1200px;
 }
 .ͼ2 .cm-gutters {
-  background-color: rgb(48, 48, 48);
-  color: rgb(128, 128, 128);
-  border-right: 1px solid rgb(64, 64, 64);
+  background-color: var(--48);
+  color: var(--128);
+  border-right: 1px solid var(--64);
 }
 .cm-content {
-  background-color: rgb(32, 32, 32);
+  background-color: var(--32);
 }
 .ͼ4 .cm-line {
-  caret-color: rgb(192, 192, 192) !important;
+  caret-color: var(--192) !important;
 }
 .ͼ15 {
   background: none;
@@ -752,13 +766,13 @@ input.form-check-input {
 	border: none;
 }
 .ͼ4 .cm-line::selection {
-  color: rgb(192, 192, 192) !important;
-  background: rgb(64, 64, 64) !important;
+  color: var(--192) !important;
+  background: var(--64) !important;
 }
 
 /* Styling file history page */
 .old-history-main > h2 {
-  color: rgb(128, 128, 128);
+  color: var(--128);
   text-transform: lowercase;
 }
 .old-history-main .file-name {
@@ -770,21 +784,21 @@ input.form-check-input {
   color: #FFA3B5;
 }
 .commit-list span {
-  color: rgb(128, 128, 128);
+  color: var(--128);
 }
 
 /* Styling user profile page */
 #user-profile {
   width: 290px;
-  background-color: rgb(48, 48, 48);
-  border: 1px solid rgb(64, 64, 64);
+  background-color: var(--48);
+  border: 1px solid var(--64);
   border-radius: 12px;
 }
 
 /* Styling login screen */
 .login-panel {
-  background: rgb(48, 48, 48);
-  border: 1px solid rgb(64, 64, 64);
+  background: var(--48);
+  border: 1px solid var(--64);
   border-radius: 12px;
   padding: 20px 60px;
   width: 390px;
@@ -792,36 +806,36 @@ input.form-check-input {
   box-shadow: 0 0 256px #000;
 }
 #login-bottom .bottom-item {
-    border-right: 1px solid #AA717C;
+    border-right: 1px solid var(--pink);
 }
 /* Langauge selection menu */
 .sf-popover-con > li > a {
-  color: rgb(192, 192, 192) !important;
+  color: var(--192) !important;
   border-radius: 6px;
 }
 .sf-popover-con > li > a:hover {
-  background-color: rgb(64, 64, 64) !important;
+  background-color: var(--64) !important;
 }
 
 @media (max-width: 767px) {
   .side-panel {
-    background: rgb(24, 24, 24);
+    background: var(--24);
   }
 }
 @media (max-width: 767px) {
   .side-panel-north {
-    border-right: 1px solid rgb(48, 48, 48);
+    border-right: 1px solid var(--48);
   }
 }
 
 @media (max-width: 767px) {
   .side-panel {
-    background: rgb(24, 24, 24) !important;
+    background: var(--24) !important;
   }
 }
 @media (max-width: 767px) {
   .side-panel-north {
-    border-right: 1px solid rgb(48, 48, 48) !important;
+    border-right: 1px solid var(--48) !important;
   }
 }
 @media (max-width: 767px) {
