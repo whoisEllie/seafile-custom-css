@@ -4,7 +4,7 @@ My (incomplete) custom CSS for Seafile, made to be easy on the eyes and slightly
 ### How do I use this?
 On your Seafile admin settings page, paste this into your Custom CSS textbox:
 ```
-@import url('https://frugbug.github.io/seafile-custom-css/seafile-custom-css.css');
+@import url('https://frugbug.github.io/seafile-custom-css/seafile.css');
 ```
 
 ### What does it look like?
