@@ -61,6 +61,20 @@
         border-radius: 4px;
         padding: 2px 6px;
       }
+      #footer {
+        text-align: center;
+        margin: 0 0 1em;
+      }
+      .footer-link {
+        color: rgb(96, 96, 96);
+        font-size: 0.9em;
+        transition: color 0.2s;
+        text-decoration: none;
+      }
+      .footer-link:hover {
+        color: rgb(128, 128, 128);
+        text-decoration: underline;
+      }
     </style>
   </head>
   <body>
@@ -93,6 +107,9 @@
       <p>Because if I simply put the file from <span class="inline-code">raw.githubusercontent.com</span> into Seafile's custom CSS field, it won't work. Github serves all text files with a MIME type of <span class="inline-code">text/plain</span> to prevent people abusing their service as a CDN, which is a shame, because that would be really cool. So in order to have the CSS file hosted on Github (and also have it work), it needs to be part of a Github pages site.</p>
       <h3>Why is there a shell script?</h3>
       <p>I use Python's <span class="inline-code">http.server</span> module to host this for my Seafile instance when I work on it, so I don't have to commit each small change I make.</p>
-      </div>
+    </div>
+    <div id="footer">
+      <a class="footer-link" href="https://github.com/frugbug/seafile-custom-css">View on Github</a>
+    </div>
   </body>
 </html>
