@@ -901,6 +901,16 @@ input.form-check-input {
   background-color: var(--64) !important;
 }
 
+/* Popup toasts */
+[data-evergreen-toaster-container] > span > div > div > div {
+  border-radius: 4px;
+  background-color: var(--32) !important;
+  box-shadow: none;
+}
+[data-evergreen-toaster-container] > span > div > div > div * {
+  color: var(--192) !important;
+}
+
 @media (max-width: 767px) {
   .side-panel {
     background: var(--24);
