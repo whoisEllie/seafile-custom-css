@@ -442,6 +442,9 @@ a.op-link:hover {
 a, a:hover {
   color: #FFA3B5;
 }
+.path-link {
+  color: #FFA3B5 !important;
+}
 
 /* Visible on "Devices" page in admin settings */
 .cur-view-path.tab-nav-container .nav .nav-item .nav-link.active {
