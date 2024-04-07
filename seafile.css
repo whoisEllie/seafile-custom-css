@@ -557,12 +557,16 @@ a, a:hover {
 }
 
 /* Invert and filter non-thumbnail file icons */
-.dir-icon > [src*="media/img"], .detail-title > img, .detail-body > div > [src*="media/img"] {
+.dir-icon > [src*="media/img"],
+.detail-title > img,
+.detail-body > div > [src*="media/img"],
+.text-center > [src*="media/img"] {
   /*filter: contrast(75%);*/
   filter: invert(100%) hue-rotate(-50deg) contrast(65%);
   /*display: none;*/
 }
-.dir-icon > [src*="media/img/folder"] {
+.dir-icon > [src*="media/img/folder"],
+.text-center > [src*="media/img/folder"] {
   filter: hue-rotate(-50deg) grayscale(15%) brightness(0.8);
 }
 /* Filter checkboxes + radio buttons */
