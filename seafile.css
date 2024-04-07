@@ -467,6 +467,12 @@ a, a:hover {
   color: var(--192);
 }
 
+/* Notifications page */
+.text-orange {
+  color: var(--pink-brighter) !important;
+  padding-left: 0.3em;
+}
+
 /* Statistics page */
 .chartjs-render-monitor {
   filter: invert(100%) grayscale(60%) brightness(1.25);
