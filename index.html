@@ -5,17 +5,47 @@
     <meta name="author" content="frugbug"/>
     <meta name="description" content="Where my stuff is"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta property="og:title" content="Seafile Custom CSS"/>
+    <meta property="og:description" content="By Laura"/>
+    <meta property="og:image" content="https://frugbug.github.io/seafile-custom-css/media/seafile-logo-large-square.png"/>
+    <meta property="og:image:type" content="image/png"/>
+    <meta property="og:image:height" content="384"/>
+    <meta property="og:image:width" content="384"/>
+    <meta content="#AA717C" data-react-helmet="true" name="theme-color"/>
+    <link rel="apple-touch-icon-precomposed" href="/media/seafile-logo-large-square.png"/>
     <title>Seafile Custom CSS</title>
     <link rel="icon" href="media/favicon_pink.png" type="image/x-icon"/>
   </head>
-  <body style="font-family: sans-serif; background-color: rgb(24, 24, 24); color: rgb(192, 192, 192);">
-    <div style="margin: 25vh auto; max-width: 1000px; padding: 0 1.5em;">
+  <body style="font-family: sans-serif; background-color: rgb(24, 24, 24); color: rgb(192, 192, 192); line-height: 1.5;">
+    <div style="background-color: rgb(32, 32, 32); border-radius: 12px; border: 1px solid rgb(64, 64, 64); margin: 1em auto; max-width: 1000px; padding: 1.5em;">
       <img src="media/seafile-logo-dark-pink.png" style="display: block; margin: 0 auto;"/>
       <br>
       <h1 style="text-align: center;">Seafile Custom CSS</h1>
       <p>My custom CSS for Seafile</p>
-      <h3>Why is there a website?</h3>
-      <p>Because if I simply put the file from `raw.githubusercontent.com` into Seafile's custom CSS field, it won't work. Github serves all text files with a MIME type of `text/plain` to prevent abusing abusing their service as a CDN, which is a shame, because that would be really cool. So in order to have the CSS file hosted here (and also have it work), it needs to be part of a Github pages site.</p>
-    </div>
+      <h3 style="padding-bottom: 2px; border-bottom: 1px solid rgb(48, 48, 48);">How do I use this?</h3>
+      <p>On your Seafile admin settings page, paste this into your Custom CSS textbox:</p>
+      <div style="background-color: rgb(24, 24, 24); padding: 8px; border-radius: 6px; border: 1px solid rgb(48, 48, 48); width: auto;">
+        <code style="padding: 0 0.5em">
+          @import url('https://frugbug.github.io/seafile-custom-css/seafile-custom-css.css');
+        </code>
+      </div>
+      <h3 style="padding-bottom: 2px; border-bottom: 1px solid rgb(48, 48, 48);">What does it look like?</h3>
+      <a href="screenshots/1.png">
+        <img src="screenshots/1.png" style="width: 100%;"/>
+      </a>
+      <a href="screenshots/2.png">
+        <img src="screenshots/2.png" style="width: 100%;"/>
+      </a>
+      <a href="screenshots/3.png">
+        <img src="screenshots/3.png" style="width: 100%;"/>
+      </a>
+      <a href="screenshots/4.png">
+        <img src="screenshots/4.png" style="width: 100%;"/>
+      </a>
+      <h3 style="padding-bottom: 2px; border-bottom: 1px solid rgb(48, 48, 48);">Why is there a website?</h3>
+      <p>Because if I simply put the file from <span style="font-family: monospace; font-size: 1.2em; background-color: rgb(24, 24, 24); border-radius: 4px; padding: 2px 6px;">raw.githubusercontent.com</span> into Seafile's custom CSS field, it won't work. Github serves all text files with a MIME type of <span style="font-family: monospace; font-size: 1.2em; background-color: rgb(24, 24, 24); border-radius: 4px; padding: 2px 6px;">text/plain</span> to prevent people abusing their service as a CDN, which is a shame, because that would be really cool. So in order to have the CSS file hosted on Github (and also have it work), it needs to be part of a Github pages site.</p>
+      <h3 style="padding-bottom: 2px; border-bottom: 1px solid rgb(48, 48, 48);">Why is there a shell script?</h3>
+      <p>I use Python's <span style="font-family: monospace; font-size: 1.2em; background-color: rgb(24, 24, 24); border-radius: 4px; padding: 2px 6px;">http.server</span> module to host this for my Seafile instance when I work on it, so I don't have to commit each small change I make.</p>
+      </div>
   </body>
 </html>
