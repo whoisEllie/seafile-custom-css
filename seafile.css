@@ -36,6 +36,10 @@ textarea {
   border-left-color: var(--128);
 }
 
+.text-secondary {
+  color: var(--128) !important;
+}
+
 /* Header styling for simpler pages */
 #header, .top-header {
   background: var(--48);
