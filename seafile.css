@@ -862,3 +862,13 @@ input.form-check-input {
     box-shadow: none !important;
   }
 }
+.mobile-operation-menu {
+  background: var(--48);
+  border-top: 1px solid var(--64) !important;
+}
+.mobile-menu-item {
+  border-radius: 12px;
+  margin: 4px 12px 4px 12px;
+  width: calc(100% - 24px);
+  filter: hue-rotate(310deg) grayscale(50%);
+}
