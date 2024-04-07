@@ -410,6 +410,35 @@ a.op-link:hover {
   color: var(--128);
 }
 
+/* Move file, copy file etc. */
+.file-chooser-container {
+  border: none;
+}
+.file-chooser-item .item-info, .list-view-header {
+  border-radius: 6px;
+  border: none;
+}
+.file-chooser-item .item-info:hover, .list-view-header:hover {
+  border-radius: 6px;
+  border: none;
+  background-color: var(--64);
+}
+.file-chooser-item .item-active {
+  background: var(--pink) !important;
+  border-radius: 6px;
+  box-shadow: none;
+  color: white;
+}
+.file-chooser-item .item-active:hover {
+  background: var(--pink-bright) !important;
+}
+.file-chooser-item {
+  padding: 3px 0 3px 22px;
+}
+.modal-footer {
+	border-top: none;
+}
+
 /* Styling small buttons */
 .fa-link,
 .fa-star,
