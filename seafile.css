@@ -298,6 +298,12 @@ img.captcha {
   background-color: var(--pink);
 }
 
+.btn-primary.disabled, .btn-primary:disabled {
+  color: var(--208);
+  background-color: var(--pink);
+  border-color: var(--pink);
+}
+
 tr > td {
   color: var(--104);
   border-bottom: 1px solid var(--48);
