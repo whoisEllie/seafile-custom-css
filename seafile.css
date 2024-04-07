@@ -289,6 +289,10 @@ img.captcha {
   background-color: var(--pink-bright);
   border: 1px solid var(--pink-brighter)  !important;
 }
+.btn-primary:focus {
+  background-color: var(--pink-bright);
+  border: 1px solid var(--pink-brighter)  !important;
+}
 
 .btn-outline-primary {
   color: var(--pink);
