@@ -82,8 +82,8 @@ textarea {
 
 /* User Settings page */
 .user-setting-nav .nav-item.active .nav-link {
-  border-color: var(--pink);
-  color: var(--pink);
+  border-color: var(--pink-link);
+  color: var(--pink-link) !important;
   /* background-color: var(--48); */
   border-bottom: none;
 }
