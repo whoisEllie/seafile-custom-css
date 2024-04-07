@@ -10,6 +10,7 @@
   --pink: #AA717C;
   --pink-bright: #BC838E;
   --pink-brighter: #D59CA7;
+  --pink-link: #FFA3B5;
   --primary: #AA717C;
 }
 
@@ -335,12 +336,16 @@ a.op-link {
   transition: color 0.2s;
 }
 a.op-link:hover {
-  color: #FFA3B5 !important;
+  color: var(--pink-link) !important;
+}
+
+.link-dropdown-item {
+  color: var(--192);
 }
 
 /* Styling "Share library" modal */
 .op-target {
-  color: #FFA3B5
+  color: var(--pink-link)
 }
 .modal-header {
   border-bottom: 1px solid var(--64);
@@ -431,7 +436,7 @@ a.op-link:hover {
 .sf2-icon-delete:hover,
 .sf2-icon-copy:hover,
 .sf2-icon-x3:hover {
-  color: #FFA3B5 !important;
+  color: var(--pink-link) !important;
 }
 .close {
   color: var(--128);
@@ -448,16 +453,16 @@ a.op-link:hover {
 }
 
 a, a:hover {
-  color: #FFA3B5;
+  color: var(--pink-link);
 }
 .path-link {
-  color: #FFA3B5 !important;
+  color: var(--pink-link) !important;
 }
 
 /* Visible on "Devices" page in admin settings */
 .cur-view-path.tab-nav-container .nav .nav-item .nav-link.active {
-  color: #FFA3B5 !important;
-  border-bottom: 0.125rem solid #FFA3B5;
+  color: var(--pink-link) !important;
+  border-bottom: 0.125rem solid var(--pink-link);
 }
 .nav .nav-item .nav-link {
   border-bottom: 0.125rem solid transparent; /* to stop jumping when selected */
@@ -502,8 +507,8 @@ a, a:hover {
   color: var(--192) !important;
 }
 .statistic-traffic-tab .statistic-traffic-tab-item.active {
-  border-bottom: 2px solid #FFA3B5 !important;
-  color: #FFA3B5 !important;
+  border-bottom: 2px solid var(--pink-link) !important;
+  color: var(--pink-link) !important;
 }
 .statistic-reports-title {
   background: none !important;
@@ -608,7 +613,7 @@ input.form-check-input {
   border-radius: 0.375em;
 }
 .progress-bar {
-  background-color: #FFA3B5;
+  background-color: var(--pink-link);
 }
 
 .dropdown-menu {
@@ -718,7 +723,7 @@ input.form-check-input {
   border-bottom: none;
 }
 #notice-popover li.unread {
-  border-left: 3px solid #FFA3B5;
+  border-left: 3px solid var(--pink-link);
 }
 #notice-popover li:hover {
   background: var(--64);
@@ -813,12 +818,12 @@ input.form-check-input {
   text-transform: lowercase;
 }
 .old-history-main .file-name {
-  color: #FFA3B5;
+  color: var(--pink-link);
   text-transform: none;
   /* margin-right: 0.2em; */
 }
 .old-history-main .commit-list .username {
-  color: #FFA3B5;
+  color: var(--pink-link);
 }
 .commit-list span {
   color: var(--128);
