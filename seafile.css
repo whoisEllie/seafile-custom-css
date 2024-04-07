@@ -10,6 +10,7 @@
   --pink: #AA717C;
   --pink-bright: #BC838E;
   --pink-brighter: #D59CA7;
+  --primary: #AA717C;
 }
 
 ::selection {
@@ -226,7 +227,8 @@ textarea,
 #id_captcha_1,
 .true__control,
 .true__menu,
-.permission-editor__control {
+.permission-editor__control,
+.big-new-file-button {
   background-color: var(--32) !important;
   color: var(--192) !important;
   border: 1px solid var(--48) !important;
@@ -242,7 +244,8 @@ textarea:hover,
 #id_captcha_1:hover,
 .true__control:hover,
 .true__menu:hover,
-.permission-editor__control:hover {
+.permission-editor__control:hover,
+.big-new-file-button:hover {
   background-color: var(--48) !important;
   color: var(--208) !important;
   border: 1px solid var(--64) !important;
@@ -255,7 +258,11 @@ textarea:focus,
 .input:focus,
 .css-1yl8597-control:focus,
 .css-18i9lch-control:focus,
-#id_captcha_1:focus {
+#id_captcha_1:focus,
+.true__control:focus,
+.true__menu:focus,
+.permission-editor__control:focus,
+.big-new-file-button:focus {
   background-color: var(--48) !important;
   color: var(--208) !important;
   border: 1px solid var(--64) !important;
