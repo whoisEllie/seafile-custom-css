@@ -117,12 +117,12 @@ textarea {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 .new-narrow-panel .hd {
-	color: var(--192);
-	font-size: 1.5rem;
-	padding: 50px 20px 4px;
+  color: var(--192);
+  font-size: 1.5rem;
+  padding: 50px 20px 4px;
   margin-bottom: 1rem;
-	background: none;
-	border-bottom: none;
+  background: none;
+  border-bottom: none;
   text-align: center;
   font-weight: normal;
   border-bottom: 1px solid var(--48);
@@ -432,8 +432,8 @@ a, a:hover {
 
 /* Visible on "Devices" page in admin settings */
 .cur-view-path.tab-nav-container .nav .nav-item .nav-link.active {
-	color: #FFA3B5 !important;
-	border-bottom: 0.125rem solid #FFA3B5;
+  color: #FFA3B5 !important;
+  border-bottom: 0.125rem solid #FFA3B5;
 }
 .nav .nav-item .nav-link {
   border-bottom: 0.125rem solid transparent; /* to stop jumping when selected */
@@ -665,9 +665,9 @@ input.form-check-input {
 }
 .notification-body .notification-footer {
   color: var(--128);
-	background: var(--32);
-	border-radius: 0;
-	border-top: 1px solid var(--64);
+  background: var(--32);
+  border-radius: 0;
+  border-top: 1px solid var(--64);
 }
 .notification-container .notification-header .notification-close-icon {
   opacity: 1.0 !important;
@@ -763,7 +763,7 @@ input.form-check-input {
   background: none;
 }
 .ͼ1 .cm-cursor, .ͼ1 .cm-dropCursor {
-	border: none;
+  border: none;
 }
 .ͼ4 .cm-line::selection {
   color: var(--192) !important;
