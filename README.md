@@ -1,5 +1,5 @@
 # seafile-custom-css
-My custom CSS for Seafile
+My (incomplete) custom CSS for Seafile, made to be easy on the eyes and slightly softer than the default styling.
 
 ### How do I use this?
 On your Seafile admin settings page, paste this into your Custom CSS textbox:
