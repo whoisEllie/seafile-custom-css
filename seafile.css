@@ -549,7 +549,7 @@ a, a:hover {
 /* Invert and filter non-thumbnail file icons */
 .dir-icon > [src*="media/img"], .detail-title > img, .detail-body > div > [src*="media/img"] {
   /*filter: contrast(75%);*/
-  filter: invert(100%) hue-rotate(360deg) contrast(65%);
+  filter: invert(100%) hue-rotate(-50deg) contrast(65%);
   /*display: none;*/
 }
 .dir-icon > [src*="media/img/folder"] {
