@@ -501,6 +501,12 @@ a, a:hover {
   color: var(--192);
 }
 
+/* Share Admin -> #Links on main file view */
+.cur-view-path .nav .nav-item .nav-link.active {
+  color: var(--pink-link);
+  border-bottom: 0.125rem solid var(--pink-link);
+}
+
 /* Notifications page */
 .text-orange {
   color: var(--pink-brighter) !important;
