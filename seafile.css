@@ -313,7 +313,7 @@ img.captcha {
 }
 
 tr > td {
-  color: var(--104);
+  color: var(--128);
   border-bottom: 1px solid var(--48);
 }
 tr > th {
