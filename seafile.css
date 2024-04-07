@@ -475,6 +475,13 @@ a.op-link:hover {
 .close:hover {
   color: var(--208);
 }
+.action-icon, .attr-action-icon {
+  color: var(--128) !important;
+  transition: color 0.2s;
+}
+.action-icon:hover, .attr-action-icon:hover {
+  color: var(--pink-link) !important;
+}
 
 /* Better trash icon */
 .sf2-icon-recycle::before {
