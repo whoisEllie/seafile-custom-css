@@ -788,6 +788,14 @@ input.form-check-input {
 #notice-popover li:hover {
   background: var(--64);
 }
+#notice-popover li.read {
+  border-left: 3px solid transparent;
+  transition: background 0.1s, border 0.1s;
+}
+#notice-popover li.read:hover {
+  background: var(--64);
+  border-left: 3px solid var(--pink);
+}
 #notifications .num {
   background: #E7768C;
   font-size: 13px;
