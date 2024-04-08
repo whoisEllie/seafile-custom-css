@@ -521,6 +521,17 @@ a, a:hover {
   border-bottom: 0.125rem solid var(--pink-link);
 }
 
+/* Shared with groups > #All Groups */
+.group-list-panel .group-item-heading {
+  border-bottom: 1px solid var(--48);
+}
+.group-list-panel .group-item-empty-tip {
+  border: none;
+  color: var(--104);
+  padding: 8px 0;
+  font-size: 0.85em;
+}
+
 /* Notifications page */
 .text-orange {
   color: var(--pink-brighter) !important;
