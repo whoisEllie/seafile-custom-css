@@ -553,10 +553,11 @@ a, a:hover {
 }
 .nav .nav-item .nav-link {
   border-bottom: 0.125rem solid transparent; /* to stop jumping when selected */
-  transition: color 0.2s;
+  transition: color 0.2s, margin 0.2s, background 0.1s;
 }
 .nav .nav-item .nav-link:hover {
   color: var(--192);
+  margin-left: 0.5em;
 }
 
 /* Share Admin -> #Links on main file view */
