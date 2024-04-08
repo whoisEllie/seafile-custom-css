@@ -16,6 +16,10 @@
     <title>Seafile Custom CSS</title>
     <link rel="icon" href="media/favicon_pink.png" type="image/x-icon"/>
     <style>
+      ::selection {
+        color: rgb(64, 64, 64);
+        background: #D59CA7;
+      }
       * {
         scrollbar-color: rgb(48, 48, 48) rgb(24, 24, 24);
       }
@@ -51,7 +55,7 @@
       .code-block {
         background-color: rgb(24, 24, 24);
         padding: 8px;
-        border-radius: 6px;
+        border-radius: 8px;
         border: 1px solid rgb(48, 48, 48);
         width: auto;
       }
@@ -69,19 +73,19 @@
         cursor: pointer;
         z-index: 2;
         position: relative;
-        bottom: 2px;
+        padding: 8px;
+        bottom: 9px;
+        transition: filter 0.2s;
+      }
+      .code-block-copy:hover {
+        filter: brightness(1.5);
       }
       svg {
         fill: rgb(128, 128, 128);
-        transition: fill 0.2s;
-      }
-      svg:hover {
-        fill: rgb(192, 192, 192);
       }
       #tick {
         position: relative;
         left: 20px;
-        top: -2px;
         transform: rotate(-0.25turn);
         opacity: 0;
         transition: fill 0.2s, transform 0.2s, opacity 0.2s;
@@ -90,6 +94,7 @@
       .tick-show {
         transform: rotate(0.0turn) !important;
         opacity: 1 !important;
+        z-index: 3;
       }
       #copy-button {
         position: relative;
@@ -145,14 +150,14 @@
         <code id="text-copy">@import url('https://frugbug.github.io/seafile-custom-css/seafile.css');</code>
         <div class="code-block-buttons">
           <button onclick="copyText('text-copy');return false;" class="code-block-copy">
+            <svg id="tick" width="16" height="16">
+              <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+            </svg>
             <svg id="copy-button" width="16" height="16">
               <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path>
               <path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
             </svg>
           </button>
-          <svg id="tick" width="16" height="16">
-            <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
-          </svg>
         </div>
         <script>
           function copyText(id)
@@ -170,6 +175,11 @@
             // Hide copy
             var copyButton = document.getElementById("copy-button");
             copyButton.classList.add("copy-button-hide");
+            
+            setTimeout(function(){
+              tick.classList.remove("tick-show");
+              copyButton.classList.remove("copy-button-hide");
+            }, 700);
           }
         </script>
       </div>
