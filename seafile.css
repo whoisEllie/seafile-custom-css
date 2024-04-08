@@ -733,11 +733,11 @@ input.form-check-input {
   color: var(--192);
 }
 .upload-progress .progress {
-  height: 0.75em;
+  height: 1em;
 }
 .progress {
   background-color: var(--24);
-  border-radius: 0.375em;
+  border-radius: 1em;
 }
 .progress-bar {
   background-color: var(--pink-link);
@@ -785,6 +785,7 @@ input.form-check-input {
 }
 #quota-bar {
   border: 1px solid var(--128);
+  border-radius: 12px;
 }
 #quota-usage {
   background: var(--128);
