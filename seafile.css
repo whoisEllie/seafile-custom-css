@@ -32,6 +32,11 @@ textarea {
   /* z-index: 5; */
 }
 
+.error {
+  color: #D83636;
+  text-align: center;
+}
+
 .loading-icon {
   border: 2px solid var(--192);
   border-left-color: var(--128);
