@@ -460,6 +460,10 @@ a.op-link:hover {
   border: none;
   color: var(--128);
 }
+td .form-control {
+  font-size: 0.9em;
+  padding: 0 0 0 4px !important;
+}
 
 /* Move file, copy file etc. */
 .file-chooser-container {
@@ -554,6 +558,7 @@ a, a:hover {
 .nav .nav-item .nav-link {
   border-bottom: 0.125rem solid transparent; /* to stop jumping when selected */
   transition: color 0.2s, margin 0.2s, background 0.1s;
+  border-radius: 6px;
 }
 .nav .nav-item .nav-link:hover {
   color: var(--192);
