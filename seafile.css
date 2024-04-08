@@ -231,7 +231,9 @@ textarea,
 .language-selector > [class*="-control"],
 #id_captcha_1,
 .true__control,
+.css-1yl8597-control,
 .true__menu,
+#react-select-18-listbox,
 .permission-editor__control,
 .big-new-file-button {
   background-color: var(--32) !important;
@@ -248,7 +250,9 @@ textarea:hover,
 .css-18i9lch-control,
 #id_captcha_1:hover,
 .true__control:hover,
+.css-1yl8597-control:hover,
 .true__menu:hover,
+#react-select-18-listbox:hover,
 .permission-editor__control:hover,
 .big-new-file-button:hover {
   background-color: var(--48) !important;
@@ -265,7 +269,9 @@ textarea:focus,
 .css-18i9lch-control:focus,
 #id_captcha_1:focus,
 .true__control:focus,
+.css-1yl8597-control:focus,
 .true__menu:focus,
+#react-select-18-listbox:focus;
 .permission-editor__control:focus,
 .big-new-file-button:focus {
   background-color: var(--48) !important;
@@ -386,14 +392,14 @@ a.op-link:hover {
 .user-select .true__menu:hover {
   background-color: var(--32) !important;
 }
-.true__option, .permission-editor__option  {
+.true__option, .permission-editor__option, div[id*="react-select-"][id*="option"] {
   background-color: var(--32) !important;
   border-radius: 6px !important;
   margin-left: 4px;
   width: calc(100% - 8px) !important;
   transition: background-color 0.2s;
 }
-.true__option:hover, .permission-editor__option:hover {
+.true__option:hover, .permission-editor__option:hover, div[id*="react-select-"][id*="option"]:hover {
   background-color: var(--48) !important;
 }
 .permission-editor__menu-list {
@@ -403,6 +409,7 @@ a.op-link:hover {
 }
 .css-1nmdiq5-menu {
 	background-color: var(--32) !important;
+  overflow: hidden;
 }
 .input-group-text {
   background: none;
