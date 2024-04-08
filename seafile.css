@@ -160,6 +160,28 @@ input.submit {
   color: var(--192);
 }
 
+/* Image slideshow when opened in same tab */
+.ril__toolbarItem {
+  color: var(--192);
+}
+.ril__navButtons, .ril__builtinButton {
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+.ril__navButtons:hover, .ril__builtinButton:hover {
+  opacity: 0.75;
+}
+.ril__builtinButtonDisabled {
+  opacity: 0.2 !important;
+}
+/* Use pixel interpolation when zoomed in */
+.ril__image {
+  image-rendering: auto;
+}
+.ril__image[style*="cursor: move"] {
+  image-rendering: crisp-edges;
+}
+
 /* Fix broken collapsibles in sidebar on file view */
 ul.grp-list.side-panel-slide {
   height: 36px !important;
