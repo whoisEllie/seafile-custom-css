@@ -560,7 +560,7 @@ td .form-control {
   content: "\e016";
 }
 
-a, a:hover {
+a, a:hover, a:focus {
   color: var(--pink-link);
 }
 .path-link {
@@ -1015,6 +1015,9 @@ input.form-check-input {
 }
 #login-bottom .bottom-item {
     border-right: 1px solid var(--pink);
+}
+#lang-context:hover {
+  text-decoration: underline;
 }
 /* Langauge selection menu */
 .sf-popover-con > li > a {
