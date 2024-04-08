@@ -42,7 +42,7 @@ textarea {
 }
 
 /* Header styling for simpler pages */
-#header, .top-header {
+#header, .top-header, .sf-md-viewer-topbar-first, .sf-md-viewer-topbar-first-narrow {
   background: var(--48);
   border-bottom: 1px solid var(--64);
 }
@@ -180,6 +180,14 @@ input.submit {
 }
 .ril__image[style*="cursor: move"] {
   image-rendering: crisp-edges;
+}
+
+/* Markdown editor */
+.sf-md-viewer-content {
+  filter: invert(100%) hue-rotate(180deg) contrast(80%);
+}
+.sf-md-viewer-content .sf-image {
+  filter: contrast(120%) invert(100%) hue-rotate(180deg);
 }
 
 /* Fix broken collapsibles in sidebar on file view */
