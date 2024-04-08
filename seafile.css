@@ -680,10 +680,16 @@ a, a:hover {
   background-color: var(--48);
 }
 .language-selector > :not([class*="-control"]) *:hover {
-  background-color: var(--64);
+  /* background-color: var(--64); */
 }
 .language-selector svg {
   color: var(--128) !important;
+}
+.language-selector div[id*="react-select-"][id*="option"] {
+  background-color: var(--48) !important;
+}
+.language-selector div[id*="react-select-"][id*="option"]:hover {
+  background-color: var(--64) !important;
 }
 
 .flex-auto > .side-panel {
