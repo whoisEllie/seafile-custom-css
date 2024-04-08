@@ -94,6 +94,10 @@ textarea {
 }
 .user-setting-nav .nav-item .nav-link {
   color: var(--128);
+  transition: color 0.2s;
+}
+.user-setting-nav .nav-item .nav-link:hover {
+  color: var(--192);
 }
 /* Uncomment to style user settings sidebar like admin settings */
 /* .user-setting-nav .nav-item.active .nav-link {
