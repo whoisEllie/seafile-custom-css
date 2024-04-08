@@ -836,12 +836,16 @@ input.form-check-input {
   border-radius: 0;
   border-top: 1px solid var(--64);
 }
-.notification-container .notification-header .notification-close-icon {
+.notification-container .notification-header .notification-close-icon,
+.notification-header-close .notification-close-icon,
+.notification-header-close .item-dropdown-icon {
   opacity: 1.0 !important;
   color: var(--128);
   transition: color 0.2s;
 }
-.notification-container .notification-header .notification-close-icon:hover {
+.notification-container .notification-header .notification-close-icon:hover,
+.notification-header-close .notification-close-icon:hover,
+.notification-header-close .item-dropdown-icon:hover {
   color: var(--192);
 }
 #notice-popover li {
@@ -870,6 +874,22 @@ input.form-check-input {
   line-height: 15.5px;
   left: -4px;
   top: -4px;
+}
+
+/* Style notifications modal */
+.notification-dialog-body table th {
+  border-bottom: 1px solid var(--64);
+  color: var(--192);
+}
+.notification-dialog-body table td {
+  border-bottom: 1px solid var(--64);
+  color: var(--128);
+}
+.notification-dialog-body table tbody tr {
+  transition: background-color 0.2s;
+}
+.notification-dialog-body table tbody tr:hover {
+  background-color: var(--64);
 }
 
 .file-view-content {
