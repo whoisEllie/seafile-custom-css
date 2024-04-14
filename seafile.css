@@ -217,6 +217,7 @@ ul.side-panel-slide {
 
 img.avatar, img.user-avatar {
   border-radius: 25% !important;
+  background: none;
 }
 .avatar-edit {
   border-radius: 25%;
