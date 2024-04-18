@@ -341,6 +341,10 @@ img.captcha {
   border: 1px solid var(--pink-brighter)  !important;
 }
 
+.btn-success {
+  border-radius: 6px;
+}
+
 .btn-outline-primary {
   color: var(--pink);
   border-color: var(--pink);
@@ -977,6 +981,27 @@ input.form-check-input {
 .ͼ4 .cm-line::selection {
   color: var(--192) !important;
   background: var(--64) !important;
+}
+
+/* File sharing link gen modal */
+#share-link-panel > div > dl > dd:nth-child(6) {
+  color: var(--192);
+}
+
+/* Shared file page */
+.shared-file-view-head {
+  color: var(--192);
+  background-color: var(--24);
+}
+.shared-file-view-head h2 {
+  color: var(--192);
+}
+.shared-file-view-head p {
+  color: var(--128);
+}
+.shared-file-view-body {
+  background-color: var(--24);
+  border: none;
 }
 
 /* Styling file history page */
