@@ -47,7 +47,7 @@ textarea {
 }
 
 /* Header styling for simpler pages */
-#header, .top-header, .sf-md-viewer-topbar-first, .sf-md-viewer-topbar-first-narrow {
+#header, .top-header, .sf-md-viewer-topbar-first, .sf-md-viewer-topbar-first-narrow, .shared-file-view-md-header {
   background: var(--48);
   border-bottom: 1px solid var(--64);
 }
@@ -1027,6 +1027,62 @@ input.form-check-input {
 }
 .sf-popover-con > li > a:hover {
   background-color: var(--64) !important;
+}
+
+/* Documentation/help */
+.side-nav {
+  border-right: none;
+}
+#right-panel.help-con {
+  border-left: 1px solid var(--64);
+}
+.help-con p, .help-con li {
+  color: var(--192);
+}
+#right-panel.help-con .hd {
+  background: none;
+  border-bottom: 1px solid var(--64);
+  color: var(--192);
+  padding-left: 0;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+.help-con h4 {
+  color: var(--pink-brighter);
+  border-bottom: 1px solid var(--64);
+  font-size: 1.3em;
+}
+.help-con h5 {
+  color: var(--192);
+  border-bottom: 1px solid var(--64);
+}
+.help-con img:not([src*="read_only.png"]) {
+  border-radius: 4px;
+  /* Comment out next two lines to remove contrast adjustment on images in help pages */
+  filter: contrast(85%) brightness(0.75);
+  transition: filter 0.2s;
+}
+.help-con img:hover {
+  filter: none;
+}
+.help-con pre {
+  background-color: var(--48);
+  color: var(--208);
+  border: 1px solid var(--64);
+}
+.side-nav-con .hd {
+  color: var(--pink-brighter);
+  border-bottom: 1px solid var(--64);
+}
+.side-textnav-tabs .tab a {
+  color: var(--128);
+  border-bottom: 1px solid var(--64);
+  transition: color 0.2s;
+  padding: 6px 0;
+  font-size: 14px;
+}
+.side-textnav-tabs .tab-cur a, .side-textnav-tabs .tab a:hover {
+	color: var(--192);
 }
 
 /* Popup toasts */
