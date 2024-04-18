@@ -545,6 +545,9 @@ td .form-control {
 .sf2-icon-x3:hover {
   color: var(--pink-link) !important;
 }
+.fa-star:hover {
+  color: rgb(244, 174, 84) !important;
+}
 .close {
   color: var(--128);
   text-shadow: none;
