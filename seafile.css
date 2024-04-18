@@ -262,6 +262,7 @@ h2.heading {
 
 h4.border-bottom, .info-item-heading {
   border-bottom: 1px solid var(--48) !important;
+  color: var(--192);
 }
 
 textarea,
@@ -595,6 +596,25 @@ a, a:hover, a:focus {
   border-bottom: 0.125rem solid var(--pink-link);
 }
 
+/* "Users" page in admin settings */
+.cur-view-path .sf-heading a {
+  color: var(--pink-link) !important;
+}
+.nav .nav-item a.nav-link {
+	color: var(--128);
+  border-bottom: 0.125rem solid transparent;
+}
+.nav .nav-item a.nav-link.active:not(.ellipsis) {
+  color: var(--pink-link);
+  border-bottom: 0.125rem solid var(--pink-link);
+}
+dd.info-item-content {
+  color: var(--128);
+}
+img.rounded {
+  border-radius: 25% !important;
+}
+
 /* Shared with groups > #All Groups */
 .group-list-panel .group-item-heading {
   border-bottom: 1px solid var(--48);
@@ -706,7 +726,8 @@ a, a:hover, a:focus {
 .detail-title > img,
 .detail-body > div > [src*="media/img"],
 .text-center > [src*="media/img"],
-.grid-file-img-link > [src*="media/img"] {
+.grid-file-img-link > [src*="media/img"],
+td > [src*="media/img"] {
   /*filter: contrast(75%);*/
   filter: invert(100%) hue-rotate(-50deg) contrast(65%);
   /*display: none;*/
