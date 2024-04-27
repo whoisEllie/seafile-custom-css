@@ -1106,9 +1106,9 @@ input.form-check-input {
   border-bottom: 1px solid var(--64);
 }
 .help-con img:not([src*="read_only.png"]) {
-  border-radius: 4px;
+  border-radius: 6px;
   /* Comment out next two lines to remove contrast adjustment on images in help pages */
-  filter: contrast(85%) brightness(0.75);
+  filter: contrast(90%) brightness(0.85);
   transition: filter 0.2s;
 }
 .help-con img:hover {
@@ -1132,6 +1132,24 @@ input.form-check-input {
 }
 .side-textnav-tabs .tab-cur a, .side-textnav-tabs .tab a:hover {
 	color: var(--192);
+}
+.help-con td {
+  word-break: normal;
+}
+.help-con td img {
+  filter: none !important;
+}
+.article tr:nth-child(2n) {
+  background: none;
+}
+tr.hl {
+  background-color: var(--32) !important;
+}
+.article th, .article td {
+  border: 1px solid var(--64);
+}
+.help-con table * {
+  color: var(--192);
 }
 
 /* Popup toasts */
