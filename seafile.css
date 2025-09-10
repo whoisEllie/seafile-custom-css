@@ -7,11 +7,11 @@
   --128: rgb(128, 128, 128);
   --192: rgb(192, 192, 192);
   --208: rgb(208, 208, 208);
-  --pink: #AA717C;
-  --pink-bright: #BC838E;
-  --pink-brighter: #D59CA7;
-  --pink-link: #FFA3B5;
-  --primary: #AA717C;
+  --pink: #004D88;
+  --pink-bright: #0068B8;
+  --pink-brighter: #007FE0;
+  --pink-link: #70C1FF;
+  --primary: #004D88;
 }
 
 ::selection {
